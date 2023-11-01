@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { CiUser } from 'react-icons/ci';
 import { fetchReservationsApi } from '../redux/features/reservations/reservationsApiSlice';
@@ -35,7 +35,7 @@ const Reservations = () => {
         <div className="dotted-line" />
         <ul className="reservations-list">
           {userReservations.map((reservation, index) => (
-            <li key={index} className="info">
+            <li key={reservation.id} className="info">
               <p className="text">
                 RESERVATION #
                 {index + 1}

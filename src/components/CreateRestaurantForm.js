@@ -72,7 +72,7 @@ const CreateRestaurantForm = () => {
             Create Restaurant
           </button>
           <NavLink to="/sections/new">
-            <button className="go-back">
+            <button className="go-back" type="button">
               <TiMediaPlayReverseOutline className="previous" />
             </button>
           </NavLink>

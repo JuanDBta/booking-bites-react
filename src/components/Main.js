@@ -41,7 +41,7 @@ const Main = () => {
         <h3 className="title-description">Please select a section</h3>
         <div className="dotted-line" />
         <div className={`prev-button-container ${currentIndex === 0 ? 'disabled' : ''}`}>
-          <button className={`prev-button ${currentIndex === 0 ? 'disabled' : ''}`} onClick={handlePrevClick} disabled={currentIndex === 0}>
+          <button type="button" className={`prev-button ${currentIndex === 0 ? 'disabled' : ''}`} onClick={handlePrevClick} disabled={currentIndex === 0}>
             <TiMediaPlayReverseOutline className="previous-icon" />
           </button>
         </div>
@@ -71,7 +71,7 @@ const Main = () => {
 
         </div>
         <div className={`next-button-container ${currentIndex === sections.length - sectionsPerPage ? 'disabled' : ''}`}>
-          <button className={`next-button ${currentIndex === sections.length - sectionsPerPage ? 'disabled' : ''}`} onClick={handleNextClick} disabled={currentIndex === sections.length - sectionsPerPage}>
+          <button type="button" className={`next-button ${currentIndex === sections.length - sectionsPerPage ? 'disabled' : ''}`} onClick={handleNextClick} disabled={currentIndex === sections.length - sectionsPerPage}>
             <TiMediaPlayOutline className="next-icon" />
           </button>
         </div>

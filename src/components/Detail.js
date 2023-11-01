@@ -10,7 +10,6 @@ import NavBar from './NavBar';
 const SectionDetail = () => {
   const sections = useSelector((state) => state.sections);
   const { id } = useParams();
-  const navigate = useNavigate();
   const detailsection = sections.find((section) => section.id === Number(id));
   if (!detailsection) {
     return <div>Loading...</div>;
@@ -73,7 +72,7 @@ const SectionDetail = () => {
         </ul>
 
         <NavLink to="/home">
-          <button className="go-back-button">
+          <button className="go-back-button" type="button">
             <TiMediaPlayReverseOutline className="previous-icon" />
           </button>
         </NavLink>
