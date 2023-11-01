@@ -4,7 +4,7 @@ import { FaBars, FaSearch } from 'react-icons/fa';
 import { addReservation } from '../redux/features/reservations/reservationSlice';
 import NavBar from './NavBar';
 import { fetchSections } from '../redux/features/sections/sectionsSlice';
-import styles from '../styles/Reservationnew.module.css';
+import '../styles/Reservationnew.module.css';
 import { usersSlice } from '../redux/features/users/usersSlice';
 
 const ReservationNew = () => {

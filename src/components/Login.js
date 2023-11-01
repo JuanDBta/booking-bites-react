@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUser } from '../redux/features/users/usersSlice';
-import styles from '../styles/NavBar.module.css';
+import '../styles/NavBar.module.css';
 
 const Login = () => {
   const [userName, setUserName] = useState('');

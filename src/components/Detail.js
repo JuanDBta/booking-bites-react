@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TiMediaPlayReverseOutline } from 'react-icons/ti';
-import styles from '../styles/Detail.module.css';
+import '../styles/Detail.module.css';
 import NavBar from './NavBar';
 
 const SectionDetail = () => {

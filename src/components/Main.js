@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { TiMediaPlayOutline, TiMediaPlayReverseOutline } from 'react-icons/ti';
 import { fetchSections } from '../redux/features/sections/sectionsSlice';
 import NavBar from './NavBar';
-import styles from '../styles/Main.module.css';
+import '../styles/Main.module.css';
 
 const Main = () => {
   const dispatch = useDispatch();

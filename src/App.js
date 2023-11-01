@@ -10,21 +10,21 @@ import CreateRestaurantForm from './components/CreateRestaurantForm';
 import Delete from './components/Delete';
 import styles from './App.css';
 
-const SplashPage = () => (
-  <div className="splash_container">
-    <div className="splash_content">
-      <h1 className="splash_title">BookingBites</h1>
+export const SplashPage = () => (
+  <div className={styles.splash_container}>
+    <div className={styles.splash_content}>
+      <h1 className={styles.splash_title}>BookingBites</h1>
       <p>Where Ambience Meets Appetite for Extraordinary Dining Experiences!</p>
-      <div className="splash_btn">
-        <button className="splash-button"><Link to="/login">Log In</Link></button>
-        <button className="splash-button"><Link to="/register">Sign Up</Link></button>
+      <div className={styles.splash_btn}>
+        <button className={styles['splash-button']}><Link to="/login">Log In</Link></button>
+        <button className={styles['splash-button']}><Link to="/register">Sign Up</Link></button>
       </div>
     </div>
   </div>
 
 );
 
-const App = () => (
+export const App = () => (
   <>
     <Routes>
       <Route path="/" element={<SplashPage />} />
@@ -39,5 +39,3 @@ const App = () => (
     </Routes>
   </>
 );
-
-export default App;

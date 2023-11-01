@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { CiUser } from 'react-icons/ci';
 import { fetchReservationsApi } from '../redux/features/reservations/reservationsApiSlice';
 import { fetchSections } from '../redux/features/sections/sectionsSlice';
-import styles from '../styles/Reservations.module.css';
+import '../styles/Reservations.module.css';
 import NavBar from './NavBar';
 
 const Reservations = () => {

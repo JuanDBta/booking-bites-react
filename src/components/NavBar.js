@@ -6,7 +6,7 @@ import {
 import { ImFacebook } from 'react-icons/im';
 import { TiSocialGooglePlus } from 'react-icons/ti';
 import { BsVimeo } from 'react-icons/bs';
-import styles from '../styles/NavBar.module.css';
+import '../styles/NavBar.module.css';
 import Logout from './Logout';
 
 const NavBar = () => {

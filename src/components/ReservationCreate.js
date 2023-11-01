@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { FaBars, FaSearch } from 'react-icons/fa';
 import { addReservation } from '../redux/features/reservations/reservationSlice';
 import { fetchSections } from '../redux/features/sections/sectionsSlice';
-import styles from '../styles/Reservationnew.module.css';
+import '../styles/Reservationnew.module.css';
 import { usersSlice } from '../redux/features/users/usersSlice';
 import NavBar from './NavBar';
 

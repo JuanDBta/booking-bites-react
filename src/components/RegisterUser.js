@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { createUser } from '../redux/features/users/usersSlice';
-import styles from '../styles/Login.module.css';
+import '../styles/Login.module.css';
 
 const RegisterUser = () => {
   const [name, setName] = useState('');

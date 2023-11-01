@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Delete.module.css';
+import '../styles/Delete.module.css';
 import NavBar from './NavBar';
 
 const Delete = () => (

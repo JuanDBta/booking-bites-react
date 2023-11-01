@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { logout } from '../redux/features/users/usersSlice';
-import styles from '../styles/NavBar.module.css';
+import '../styles/NavBar.module.css';
 
 const Logout = () => {
   const navigate = useNavigate();

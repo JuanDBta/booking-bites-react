@@ -1,25 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom';
 import './index.css';
-import App from './App';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { App, SplashPage } from './App';
+import Login from './components/Login';
+import RegisterUser from './components/RegisterUser';
+import store from './redux/store';
 
-ReactDOM.render(
+createRoot(document.getElementById('root')).render(
   <Provider store={store}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SplashPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RegisterUser />} />
-        <Route
-          path="/*"
-          element={(
-            <>
-              <App />
-            </>
-          )}
-        />
+        <Route path="/*" element={<App />} />
       </Routes>
     </BrowserRouter>
   </Provider>,
-  document.getElementById('root'),
 );
