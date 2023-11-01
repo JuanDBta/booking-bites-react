@@ -24,13 +24,14 @@ const renderWithRedux = (component, initialState = {}) => {
 describe('NavBar Component', () => {
   test('renders Navbar with default state', () => {
     const { getByText } = renderWithRedux(<NavBar />);
-    expect(getByText('BookingBites')).toBeInTheDocument();
+    expect(getByText('BookingBites')).toBeTruthy();
   });
 
   test('toggles navigation on menu click', () => {
     const { container } = renderWithRedux(<NavBar />);
     const menuButton = container.querySelector('.menu-top_div');
     fireEvent.click(menuButton);
-    expect(container.querySelector('.app-header')).toBeInTheDocument();
+    expect(container.querySelector('.app-header')).toBeTruthy();
+
   });
 });
