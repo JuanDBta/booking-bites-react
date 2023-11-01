@@ -16,8 +16,8 @@ export const SplashPage = () => (
       <h1 className={styles.splash_title}>BookingBites</h1>
       <p>Where Ambience Meets Appetite for Extraordinary Dining Experiences!</p>
       <div className={styles.splash_btn}>
-        <button className={styles['splash-button']}><Link to="/login">Log In</Link></button>
-        <button className={styles['splash-button']}><Link to="/register">Sign Up</Link></button>
+        <button className={styles['splash-button']} type="button"><Link to="/login">Log In</Link></button>
+        <button className={styles['splash-button']} type="button"><Link to="/register">Sign Up</Link></button>
       </div>
     </div>
   </div>
