@@ -18,9 +18,6 @@ export const fetchSections = createAsyncThunk('data/fetchSections', async () => 
   }
 });
 export const addSection = createAsyncThunk('sections/addSection', async (newsection) => {
-  const headers = {
-    'Content-Type': 'application/json',
-  };
   try {
     await axios.post(`${url}/${newsection.restaurant_id}/${sections}`, newsection);
     return newsection;

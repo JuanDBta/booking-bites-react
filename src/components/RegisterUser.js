@@ -32,7 +32,7 @@ const RegisterUser = () => {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        <label htmlFor="registerUserName" className="label-text">Username</label>
+        <label htmlFor="registerUserName" id="registerUserName" className="label-text">Username</label>
         <input
           className="username-field"
           type="text"

@@ -63,7 +63,7 @@ const SectionDetail = () => {
             to={`/section/reserve/${detailsection.id}`}
           >
             <p className="flex discover ">
-              <button className="detail_reserve flex">
+              <button type="button" detail_reserve flex">
                 Book a table
                 <div className="circle-right"><p>&gt;</p></div>
               </button>

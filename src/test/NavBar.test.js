@@ -32,6 +32,5 @@ describe('NavBar Component', () => {
     const menuButton = container.querySelector('.menu-top_div');
     fireEvent.click(menuButton);
     expect(container.querySelector('.app-header')).toBeTruthy();
-
   });
 });

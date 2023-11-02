@@ -14,7 +14,7 @@ export const fetchUser = createAsyncThunk(
       const res = await response.json();
       return res;
     } catch (error) {
-      return console.error(error.message);
+      return error.message;
     }
   },
 );
