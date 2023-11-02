@@ -42,15 +42,17 @@ const Main = () => {
         <div className="dotted-line" />
         <div className={`prev-button-container ${currentIndex === 0 ? 'disabled' : ''}`}>
           <button type="button" className={`prev-button ${currentIndex === 0 ? 'disabled' : ''}`} onClick={handlePrevClick} disabled={currentIndex === 0}>
+            <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
             <TiMediaPlayReverseOutline className="previous-icon" />
           </button>
         </div>
         <div className="sections-list">
 
           {visibleSections.map((section, index) => (
+
             <div key={section.id} className={`section ${index === 0 ? 'first-section' : index === 2 ? 'third-section' : ''}`}>
               <Link to={`/sections/${section.id}`} key={section.id} className="link_to_section">
-                <img src={section.image} className="image" alt="image" />
+                <img src={section.image} className="image" alt="section" />
                 <div className="name">{section.name}</div>
                 <div className="dotted-line-desc" />
                 <div className="description">{section.description}</div>
@@ -72,6 +74,7 @@ const Main = () => {
         </div>
         <div className={`next-button-container ${currentIndex === sections.length - sectionsPerPage ? 'disabled' : ''}`}>
           <button type="button" className={`next-button ${currentIndex === sections.length - sectionsPerPage ? 'disabled' : ''}`} onClick={handleNextClick} disabled={currentIndex === sections.length - sectionsPerPage}>
+            <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
             <TiMediaPlayOutline className="next-icon" />
           </button>
         </div>

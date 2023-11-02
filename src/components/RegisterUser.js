@@ -22,26 +22,30 @@ const RegisterUser = () => {
   return (
     <form action="log-in" method="post" className="form-container">
       <div className="login-container">
-        <label htmlFor="registerName" className="label-text">Name</label>
-        <input
-          className="username-field"
-          type="text"
-          name="registerName"
-          id="registerName"
-          placeholder="Enter your name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <label htmlFor="registerUserName" id="registerUserName" className="label-text">Username</label>
-        <input
-          className="username-field"
-          type="text"
-          name="registerUserName"
-          id="registerUserName"
-          placeholder="Enter your username"
-          value={userName}
-          onChange={(e) => setUserName(e.target.value)}
-        />
+        <label htmlFor="registerName" className="label-text">
+          Name
+          <input
+            className="username-field"
+            type="text"
+            name="registerName"
+            id="registerName"
+            placeholder="Enter your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+        <label htmlFor="registerUserName" id="registerUserName" className="label-text">
+          Username
+          <input
+            className="username-field"
+            type="text"
+            name="registerUserName"
+            id="registerUserName"
+            placeholder="Enter your username"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+        </label>
         {loginError && error && <p className="error-message">{error}</p>}
         <button type="button" className="login-button" onClick={handleSubmit}>Sign In</button>
       </div>

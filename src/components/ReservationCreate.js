@@ -1,24 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { FaBars, FaSearch } from 'react-icons/fa';
 import { addReservation } from '../redux/features/reservations/reservationSlice';
 import { fetchSections } from '../redux/features/sections/sectionsSlice';
 import '../styles/Reservationnew.module.css';
-import { usersSlice } from '../redux/features/users/usersSlice';
 import NavBar from './NavBar';
 
 const ReservationCreate = () => {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.users);
   const [error, setError] = useState('');
-  const sections = useSelector((state) => state.sections);
-  const { section_id } = useParams();
+  const { sectionId } = useParams();
   const [reservationData, setReservationData] = useState({
     city: '',
     date: '',
     number_of_person: '',
-    section_id,
+    sectionId,
   });
   const handleChange = (e) => {
     setReservationData({
@@ -44,7 +41,7 @@ const ReservationCreate = () => {
       city: reservationData.city,
       date: reservationData.date,
       number_of_person: reservationData.number_of_person,
-      section_id: reservationData.section_id,
+      sectionId: reservationData.section_id,
       user_id: users.id,
     };
     dispatch(addReservation(newReservation));
@@ -52,7 +49,7 @@ const ReservationCreate = () => {
       city: '',
       date: '',
       number_of_person: '',
-      section_id,
+      sectionId,
     });
     setError('');
   };
@@ -69,7 +66,7 @@ const ReservationCreate = () => {
             <hr className="underline" />
           </h3>
           <p className="first_p flex">There are different section of restuarant. Today one of them is waiting for you! Our web application offers a seamless dining reservation.</p>
-          <p className="second_p flex">You can conveniently choose your preferred dining ambience, whether it's the cozy bar, the chic lounge</p>
+          <p className="second_p flex">You can conveniently choose your preferred dining ambience, whether it is the cozy bar, the chic lounge</p>
           <p className="thir_p flex">the scenic rooftop, the tranquil garden, or the vibrant live music area.</p>
           <p className="fourth_p flex">If you wish to book this section just use the form below.</p>
         </div>

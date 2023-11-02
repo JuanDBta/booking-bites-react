@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { FaBars, FaSearch } from 'react-icons/fa';
 import { addReservation } from '../redux/features/reservations/reservationSlice';
 import NavBar from './NavBar';
 import { fetchSections } from '../redux/features/sections/sectionsSlice';
 import '../styles/Reservationnew.module.css';
-import { usersSlice } from '../redux/features/users/usersSlice';
 
 const ReservationNew = () => {
   const dispatch = useDispatch();
@@ -69,7 +67,7 @@ const ReservationNew = () => {
             <hr className="underline" />
           </h3>
           <p className="first_p flex">There are different section of restuarant. Today one of them is waiting for you! Our web application offers a seamless dining reservation.</p>
-          <p className="second_p flex">You can conveniently choose your preferred dining ambience, whether it's the cozy bar, the chic lounge</p>
+          <p className="second_p flex">You can conveniently choose your preferred dining ambience, whether it is the cozy bar, the chic lounge</p>
           <p className="thir_p flex">the scenic rooftop, the tranquil garden, or the vibrant live music area.</p>
           <p className="fourth_p flex">If you wish to have one them just use the selector below</p>
         </div>

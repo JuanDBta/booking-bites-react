@@ -73,6 +73,7 @@ const CreateRestaurantForm = () => {
           </button>
           <NavLink to="/sections/new">
             <button className="go-back" type="button">
+              <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
               <TiMediaPlayReverseOutline className="previous" />
             </button>
           </NavLink>

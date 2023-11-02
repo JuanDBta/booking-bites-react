@@ -49,18 +49,23 @@ const NavBar = () => {
 
         <div className="social-icons">
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
             <FaTwitter className="twitter-icon" />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" id="twa">
+            <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
             <ImFacebook className="facebook-icon" />
           </a>
-          <a href="https://plus.google.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://plus.google.com" target="_blank" rel="noopener noreferrer" id="twb">
+            <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
             <TiSocialGooglePlus className="google-icon" />
           </a>
-          <a href="https://vimeo.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://vimeo.com" target="_blank" rel="noopener noreferrer" id="twc">
+            <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
             <BsVimeo className="v-icon" />
           </a>
-          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" id="twd">
+            <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
             <FaPinterestP className="pinterest-icon" />
           </a>
         </div>

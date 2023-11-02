@@ -139,22 +139,26 @@ const SectionNew = () => {
               />
 
               <div className="flex check">
-                <input
-                  type="checkbox"
-                  name="cover"
-                  checked={sectionData.cover}
-                  onChange={handleChange}
-                  className="inputs"
-                />
-                <label htmlFor="cover">Cover</label>
-                <input
-                  type="checkbox"
-                  name="live_music"
-                  checked={sectionData.live_music}
-                  onChange={handleChange}
-                  className="inputs"
-                />
-                <label htmlFor="live_music">Live music</label>
+                <label htmlFor="cover">
+                  <input
+                    type="checkbox"
+                    name="cover"
+                    checked={sectionData.cover}
+                    onChange={handleChange}
+                    className="inputs"
+                  />
+                  Cover
+                </label>
+                <label htmlFor="live_music">
+                  <input
+                    type="checkbox"
+                    name="live_music"
+                    checked={sectionData.live_music}
+                    onChange={handleChange}
+                    className="inputs"
+                  />
+                  Live music
+                </label>
               </div>
 
               <button type="submit" className="new-section-button">
@@ -166,7 +170,7 @@ const SectionNew = () => {
               <h3 className="notice flex">Please, first create a restaurant!</h3>
               <Link to="/restaurant/new">
                 <p className="flex discover">
-                  <button className="detail_reserve flex" id="back">
+                  <button className="detail_reserve flex" id="back" type="button">
                     Create New Restaurant
                     <div className="circle-right">
                       <p>&gt;</p>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  useParams, useNavigate, Link, NavLink,
+  useParams, Link, NavLink,
 } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TiMediaPlayReverseOutline } from 'react-icons/ti';
@@ -20,7 +20,7 @@ const SectionDetail = () => {
         <NavBar />
       </div>
       <div className="detail_content flex">
-        <div className="detail_img"><img src={detailsection.image} alt="Section Image" /></div>
+        <div className="detail_img"><img src={detailsection.image} alt="Section" /></div>
         <ul className="detail_list">
           <h2 className="discover flex">{detailsection.name}</h2>
 
@@ -63,7 +63,7 @@ const SectionDetail = () => {
             to={`/section/reserve/${detailsection.id}`}
           >
             <p className="flex discover ">
-              <button type="button" detail_reserve flex">
+              <button type="button" className="detail_reserve flex">
                 Book a table
                 <div className="circle-right"><p>&gt;</p></div>
               </button>
@@ -73,6 +73,7 @@ const SectionDetail = () => {
 
         <NavLink to="/home">
           <button className="go-back-button" type="button">
+            <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
             <TiMediaPlayReverseOutline className="previous-icon" />
           </button>
         </NavLink>

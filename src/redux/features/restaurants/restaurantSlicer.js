@@ -17,9 +17,6 @@ export const fetchrestaurants = createAsyncThunk('data/fetchrestaurants', async 
   }
 });
 export const addrestaurant = createAsyncThunk('restaurants/addrestaurant', async (newrestaurant) => {
-  const headers = {
-    'Content-Type': 'application/json',
-  };
   try {
     await axios.post(`${url}`, newrestaurant);
     return newrestaurant;
