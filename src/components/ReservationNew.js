@@ -14,7 +14,7 @@ const ReservationNew = () => {
     city: '',
     date: '',
     number_of_person: '',
-    section_id: '',
+    sectionId: '',
   });
   const handleChange = (e) => {
     setReservationData({
@@ -41,7 +41,7 @@ const ReservationNew = () => {
       city: reservationData.city,
       date: reservationData.date,
       number_of_person: reservationData.number_of_person,
-      section_id: reservationData.section_id,
+      sectionId: reservationData.sectionId,
       user_id: users.id,
     };
     dispatch(addReservation(newReservation)).unwrap();
@@ -49,7 +49,7 @@ const ReservationNew = () => {
       city: '',
       date: '',
       number_of_person: '',
-      section_id: '',
+      sectionId: '',
     });
     setError('');
   };
@@ -94,7 +94,7 @@ const ReservationNew = () => {
             <>
               <select
                 name="section_id"
-                value={reservationData.section_id}
+                value={reservationData.sectionId}
                 onChange={handleChange}
                 className="input"
                 id="select"

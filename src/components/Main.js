@@ -49,7 +49,6 @@ const Main = () => {
         <div className="sections-list">
           {/* eslint-disable no-nested-ternary */}
           {visibleSections.map((section, index) => (
-
             <div key={section.id} className={`section ${index === 0 ? 'first-section' : index === 2 ? 'third-section' : ''}`}>
               <Link to={`/sections/${section.id}`} key={section.id} className="link_to_section">
                 <img src={section.image} className="image" alt="section" />

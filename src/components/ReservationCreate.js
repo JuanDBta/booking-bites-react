@@ -41,7 +41,7 @@ const ReservationCreate = () => {
       city: reservationData.city,
       date: reservationData.date,
       number_of_person: reservationData.number_of_person,
-      sectionId: reservationData.section_id,
+      sectionId: reservationData.sectionId,
       user_id: users.id,
     };
     dispatch(addReservation(newReservation));
