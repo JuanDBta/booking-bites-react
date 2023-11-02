@@ -47,7 +47,7 @@ const Main = () => {
           </button>
         </div>
         <div className="sections-list">
-
+          {/* eslint-disable no-nested-ternary */}
           {visibleSections.map((section, index) => (
 
             <div key={section.id} className={`section ${index === 0 ? 'first-section' : index === 2 ? 'third-section' : ''}`}>
@@ -67,6 +67,7 @@ const Main = () => {
                     <img src="/instagram.svg" className="icon" alt="Instagram" />
                   </a>
                 </div>
+                {/* eslint-enable no-nested-ternary */}
               </Link>
             </div>
           ))}
