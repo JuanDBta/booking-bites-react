@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { addSection } from '../redux/features/sections/sectionsSlice';
 import { fetchrestaurants } from '../redux/features/restaurants/restaurantSlicer';
-import '../styles/Sectionnew.module.css';
+import '../styles/Sectionnew.css';
 import NavBar from './NavBar';
 
 const sections = [

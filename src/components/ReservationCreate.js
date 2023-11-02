@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addReservation } from '../redux/features/reservations/reservationSlice';
 import { fetchSections } from '../redux/features/sections/sectionsSlice';
-import '../styles/Reservationnew.module.css';
+import '../styles/Reservationnew.css';
 import NavBar from './NavBar';
 
 const ReservationCreate = () => {

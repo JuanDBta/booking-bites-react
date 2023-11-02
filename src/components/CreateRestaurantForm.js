@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { TiMediaPlayReverseOutline } from 'react-icons/ti';
 import { addrestaurant } from '../redux/features/restaurants/restaurantSlicer';
-import '../styles/Sectionnew.module.css';
+import '../styles/Sectionnew.css';
 import NavBar from './NavBar';
 
 const CreateRestaurantForm = () => {
