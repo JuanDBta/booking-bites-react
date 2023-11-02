@@ -19,7 +19,7 @@ const NavBar = () => {
 
   return (
     <header>
-      <div className="menu-top_div" onClick={toggleNav}>
+      <div className="menu-top_div" onClick={toggleNav} onKeyPress={toggleNav} role="button" tabIndex={0}>
         <div className="menu">{isNavOpen ? <FaTimes className="menu-icon" /> : <FaBars className="close-icon" />}</div>
       </div>
 

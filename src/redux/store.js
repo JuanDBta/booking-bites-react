@@ -11,7 +11,7 @@ const store = configureStore({
     reservations: reservationSlice,
     restaurants: restaurantSlicer,
     reservationsApi: reservationsApiReducer,
-    users: userReducer,
+    users: userReducer, // Agrega la coma al final de la última propiedad
   },
 });
 
