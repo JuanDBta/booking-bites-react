@@ -7,13 +7,13 @@ import '../styles/Sectionnew.css';
 import NavBar from './NavBar';
 
 const sections = [
-  { name: 'Cozy bar', image: '/cozy-bar.jpg' },
-  { name: 'The chic lounge', image: '/lounge.jpg' },
-  { name: 'Scenic rooftop', image: '/rooftop1.jpg' },
-  { name: 'Tranquil garden', image: '/garden.jpg' },
-  { name: 'The vibrant live music area', image: '/live_music.jpg' },
-  { name: 'Private dining room', image: '/private.jpg' },
-  { name: 'Cosy fireplace area', image: '/fire.jpg' },
+  { name: 'Cozy bar', image: './images/cozy-bar.jpg' },
+  { name: 'The chic lounge', image: './images/lounge.jpg' },
+  { name: 'Scenic rooftop', image: './images/rooftop1.jpg' },
+  { name: 'Tranquil garden', image: './images/garden.jpg' },
+  { name: 'The vibrant live music area', image: './images/live_music.jpg' },
+  { name: 'Private dining room', image: './images/private.jpg' },
+  { name: 'Cosy fireplace area', image: './images/fire.jpg' },
 ];
 
 const SectionNew = () => {

@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { TiMediaPlayReverseOutline } from 'react-icons/ti';
 import '../styles/Detail.css';
 import NavBar from './NavBar';
+import arrow from '../images/detail_right_arrow.png';
 
 const SectionDetail = () => {
   const sections = useSelector((state) => state.sections);
@@ -57,7 +58,7 @@ const SectionDetail = () => {
           </p>
           <p className="discover flex  text_gap">
             Discover more Section
-            <img src="/detail_right_arrow.png" alt="Discover Icon" className="discover-icon" style={{ width: '1em', height: 'auto' }} />
+            <img src={arrow} alt="Discover Icon" className="discover-icon" style={{ width: '1em', height: 'auto' }} />
           </p>
           <Link
             to={`/section/reserve/${detailsection.id}`}
