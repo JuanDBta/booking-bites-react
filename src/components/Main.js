@@ -5,6 +5,7 @@ import { TiMediaPlayOutline, TiMediaPlayReverseOutline } from 'react-icons/ti';
 import { fetchSections } from '../redux/features/sections/sectionsSlice';
 import NavBar from './NavBar';
 import '../styles/Main.css';
+import garden from '../images/garden.jpg';
 
 const Main = () => {
   const dispatch = useDispatch();
@@ -51,7 +52,7 @@ const Main = () => {
           {visibleSections.map((section, index) => (
             <div key={section.id} className={`section ${index === 0 ? 'first-section' : index === 2 ? 'third-section' : ''}`}>
               <Link to={`/sections/${section.id}`} key={section.id} className="link_to_section">
-                <img src={section.image} className="image" alt="section" />
+                <img src={garden} className="image" alt="section" />
                 <div className="name">{section.name}</div>
                 <div className="dotted-line-desc" />
                 <div className="description">{section.description}</div>
