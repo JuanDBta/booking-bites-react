@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const fetchReservationsApi = createAsyncThunk('data/fetchReservationsApi', async () => {
   try {
-    const response = await fetch('https://bookingbites.onrender.com/api/reservations');
+    const response = await fetch('https://bookingbitesapi.onrender.com/api/reservations');
     if (!response.ok) {
       throw new Error('Error fetching data from the API');
     }

@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const url = 'https://bookingbites.onrender.com/api/';
+const url = 'https://bookingbitesapi.onrender.com/api/';
 const users = 'users';
 
 export const fetchUser = createAsyncThunk(
