@@ -1,13 +1,19 @@
 .main {
   width: 100%;
+  height: 60vw;
   background-color: #fff;
   display: flex;
   z-index: 3;
+  overflow: hidden;
+}
+.icon {
+  color: rgb(214, 197, 197);
+  font-size: 0.7vw;
 }
 
 .main_content {
   left: 20%;
-  margin-top: 7em;
+  margin-top: 4vw;
   gap: 1em;
   display: flex;
   justify-content: center;
@@ -18,9 +24,8 @@
 
 .title {
   text-align: center;
-  margin-top: 1em;
   margin-bottom: 0;
-  font-size: 3em;
+  font-size: 2vw;
   font-weight: 800;
   color: #161616;
 }
@@ -61,7 +66,7 @@ ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 3vw;
 }
 
 .icon {
@@ -103,7 +108,7 @@ ul {
   background-color: #97bf0f;
   position: absolute;
   top: 44%;
-  left: 20%;
+  margin-left: -2.6vw;
   height: 3.5rem;
   width: 3rem;
   border-bottom-right-radius: 9999px;
