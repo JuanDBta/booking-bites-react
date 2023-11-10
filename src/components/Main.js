@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { TiMediaPlayOutline, TiMediaPlayReverseOutline } from 'react-icons/ti';
+import { GrInstagram } from 'react-icons/gr';
+import { SiFacebook } from 'react-icons/si';
+import { FaTwitter } from 'react-icons/fa';
 import { fetchSections } from '../redux/features/sections/sectionsSlice';
 import NavBar from './NavBar';
 import '../styles/Main.css';
@@ -57,14 +60,14 @@ const Main = () => {
                 <div className="dotted-line-desc" />
                 <div className="description">{section.description}</div>
                 <div className="media-links">
-                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="/facebook.svg" className="icon" alt="Facebook" />
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <SiFacebook className="icon" />
                   </a>
-                  <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="/twitter.svg" className="icon" alt="Twitter" />
+                  <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <FaTwitter className="icon" />
                   </a>
-                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="/instagram.svg" className="icon" alt="Instagram" />
+                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <GrInstagram className="icon" />
                   </a>
                 </div>
                 {/* eslint-enable no-nested-ternary */}
