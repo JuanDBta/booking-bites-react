@@ -93,7 +93,7 @@ const ReservationNew = () => {
           <div className="form_row">
             <>
               <select
-                name="section_id"
+                name="sectionId"
                 value={reservationData.sectionId}
                 onChange={handleChange}
                 className="input"
