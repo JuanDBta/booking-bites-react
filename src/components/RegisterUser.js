@@ -31,7 +31,7 @@ const RegisterUser = () => {
     <form action="log-in" method="post" className="form-container">
       <div className="login-container">
         <label htmlFor="registerName" className="label-text">
-          Name
+          name
           <input
             className="username-field"
             type="text"
@@ -43,7 +43,7 @@ const RegisterUser = () => {
           />
         </label>
         <label htmlFor="registerUserName" className="label-text">
-          Username
+          username
           <input
             className="username-field"
             type="text"
