@@ -41,8 +41,10 @@ const Main = () => {
       <div className="main_content">
 
         <h1 className="title">LATEST SECTIONS</h1>
-        <h3 className="title-description">Please select a section</h3>
-        <div className="dotted-line" />
+        <h3 className="title-description" id="title_id">Please select a section</h3>
+        <div id="dotted_id">
+          <div className="dotted-line" />
+        </div>
         <div className={`prev-button-container ${currentIndex === 0 ? 'disabled' : ''}`}>
           <button type="button" className={`prev-button ${currentIndex === 0 ? 'disabled' : ''}`} onClick={handlePrevClick} disabled={currentIndex === 0}>
             <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>

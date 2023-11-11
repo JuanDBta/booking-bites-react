@@ -9,9 +9,10 @@
 }
 
 .reserve_content {
-  top: 17%;
-  position: absolute;
-  padding-left: 22%;
+  top: 7%;
+  position: relative;
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   align-self: center;

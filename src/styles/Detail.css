@@ -1,9 +1,12 @@
 
 .detail_content {
-  width: 76%;
+  width: 98%;
   height: 50%;
-  position: absolute;
-  left: 20%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
 }
 
 .detail_img img {
@@ -63,7 +66,7 @@
   border: 0;
   background-color: #97bf0f;
   position: absolute;
-  top: 57em;
+  top: 54em;
   left: 0%;
   height: 3.5rem;
   width: 3rem;
@@ -130,8 +133,11 @@
     font-weight: 600;
   }
 
-  .detail_img img {
-    height: auto;
+  .detail_img{
+    margin-top: 0;
+  }
+  .detail_img img{
+    height: 16em;
   }
 }
 
@@ -143,4 +149,5 @@
   .detail_container {
     height: 70em;
   }
+  
 }

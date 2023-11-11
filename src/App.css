@@ -5,10 +5,6 @@ body {
   overflow-x: hidden;
 }
 
-#root {
-  display: flex;
-}
-
 .logo-title {
   display: flex;
   flex-direction: column;
@@ -132,6 +128,9 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
+  .splash_content{
+    width: 84%;
+  }
   body {
     overflow: auto;
   }

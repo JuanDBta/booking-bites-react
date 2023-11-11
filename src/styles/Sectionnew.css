@@ -14,7 +14,19 @@
 #back {
   width: 100%;
 }
-
+.cover_label{
+  width: 30%;
+}
+.music_label{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ width: 70%;
+}
+#music{
+width: 26%;
+}
 #selection_form {
   z-index: 9999;
   flex-direction: column;

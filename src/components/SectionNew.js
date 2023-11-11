@@ -139,7 +139,7 @@ const SectionNew = () => {
               />
 
               <div className="flex check">
-                <label htmlFor="cover">
+                <label htmlFor="cover" className="cover_label">
                   <input
                     type="checkbox"
                     name="cover"
@@ -149,13 +149,14 @@ const SectionNew = () => {
                   />
                   Cover
                 </label>
-                <label htmlFor="live_music">
+                <label htmlFor="live_music" className="music_label">
                   <input
                     type="checkbox"
                     name="live_music"
                     checked={sectionData.live_music}
                     onChange={handleChange}
                     className="inputs"
+                    id="music"
                   />
                   Live music
                 </label>
