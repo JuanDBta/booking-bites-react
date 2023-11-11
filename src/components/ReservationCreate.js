@@ -10,12 +10,12 @@ const ReservationCreate = () => {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.users);
   const [error, setError] = useState('');
-  const { sectionId } = useParams();
+  const { section_id } = useParams();
   const [reservationData, setReservationData] = useState({
     city: '',
     date: '',
     number_of_person: '',
-    sectionId,
+    section_id,
   });
   const handleChange = (e) => {
     setReservationData({
@@ -41,7 +41,7 @@ const ReservationCreate = () => {
       city: reservationData.city,
       date: reservationData.date,
       number_of_person: reservationData.number_of_person,
-      sectionId: reservationData.sectionId,
+      section_id: reservationData.section_id,
       user_id: users.id,
     };
     dispatch(addReservation(newReservation));
@@ -49,7 +49,7 @@ const ReservationCreate = () => {
       city: '',
       date: '',
       number_of_person: '',
-      sectionId,
+      section_id,
     });
     setError('');
   };

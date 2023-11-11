@@ -14,7 +14,7 @@ const ReservationNew = () => {
     city: '',
     date: '',
     number_of_person: '',
-    sectionId: '',
+    section_id: '',
   });
   const handleChange = (e) => {
     setReservationData({
@@ -41,15 +41,17 @@ const ReservationNew = () => {
       city: reservationData.city,
       date: reservationData.date,
       number_of_person: reservationData.number_of_person,
-      sectionId: reservationData.sectionId,
+      section_id: reservationData.section_id,
       user_id: users.id,
     };
+    console.log('section :');
+    console.log(newReservation.section_id);
     dispatch(addReservation(newReservation)).unwrap();
     setReservationData({
       city: '',
       date: '',
       number_of_person: '',
-      sectionId: '',
+      section_id: '',
     });
     setError('');
   };
@@ -93,8 +95,8 @@ const ReservationNew = () => {
           <div className="form_row">
             <>
               <select
-                name="sectionId"
-                value={reservationData.sectionId}
+                name="section_id"
+                value={reservationData.section_id}
                 onChange={handleChange}
                 className="input"
                 id="select"
