@@ -7,13 +7,13 @@ import '../styles/Sectionnew.css';
 import NavBar from './NavBar';
 
 const sections = [
-  { name: 'Cozy bar', image: 'https://bookingbites.onrender.com/cozy-bar.jpg' },
-  { name: 'The chic lounge', image: 'https://bookingbites.onrender.com/lounge.jpg' },
-  { name: 'Scenic rooftop', image: 'https://bookingbites.onrender.com/rooftop1.jpg' },
-  { name: 'Tranquil garden', image: 'https://bookingbites.onrender.com/garden.jpg' },
-  { name: 'The vibrant live music area', image: 'https://bookingbites.onrender.com/live_music.jpg' },
-  { name: 'Private dining room', image: 'https://bookingbites.onrender.com/private.jpg' },
-  { name: 'Cosy fireplace area', image: 'https://bookingbites.onrender.com/fire.jpg' },
+  { name: 'Cozy bar', image: 'https://bookingbitesapi.onrender.com/cozy-bar.jpg' },
+  { name: 'The chic lounge', image: 'https://bookingbitesapi.onrender.com/lounge.jpg' },
+  { name: 'Scenic rooftop', image: 'https://bookingbitesapi.onrender.com/rooftop1.jpg' },
+  { name: 'Tranquil garden', image: 'https://bookingbitesapi.onrender.com/garden.jpg' },
+  { name: 'The vibrant live music area', image: 'https://bookingbitesapi.onrender.com/live_music.jpg' },
+  { name: 'Private dining room', image: 'https://bookingbitesapi.onrender.com/private.jpg' },
+  { name: 'Cosy fireplace area', image: 'https://bookingbitesapi.onrender.com/fire.jpg' },
 ];
 
 const SectionNew = () => {
