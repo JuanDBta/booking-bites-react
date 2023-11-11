@@ -11,7 +11,7 @@ const initialState = {
 
 export const addReservation = createAsyncThunk('reservations/addReservation', async (newtable) => {
   try {
-    await axios.post(`${url}/${newtable.sectionId}/${reservations}`, newtable);
+    await axios.post(`${url}/${newtable.sectionId}${reservations}`, newtable);
     return newtable;
   } catch (error) {
     return error.message;
